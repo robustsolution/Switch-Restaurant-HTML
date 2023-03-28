@@ -194,10 +194,9 @@
 				<ul>
 					<li>
 						<a href="about-us.html">ABOUT US</a>
-
 						<ul>
-							<li onclick="setRegionSection()">
-								<a>WHO WE ARE</a>
+							<li>
+								<a onclick="setRegionSection()" href="javascript:void(0);">WHO WE ARE</a>
 							</li>
 
 							<li>
@@ -255,8 +254,9 @@
 
 <script>
 	function setRegionSection() {
-		localStorage.setItem("region", true)
-		location.href='home.html#region-section'
+		localStorage.setItem("region", true);
+		// alert("ok");
+		location.href='home.html#region-section';
 	}
 </script>
 
@@ -539,12 +539,12 @@
 
 </body>
 <script>
-	document.addEventListener("DOMContentLoaded", () => {
-		if (localStorage.getItem('region') === 'true') {
-			localStorage.setItem("region", false)
-			location.reload()
-		}
-	}, { once: true });
+	// document.addEventListener("DOMContentLoaded", () => {
+	// 	if (localStorage.getItem('region') === 'true') {
+	// 		localStorage.setItem("region", false)
+	// 		location.reload()
+	// 	}
+	// }, { once: true });
 	setInterval(function(){
 		if (localStorage.getItem('region') === 'true') {
 			localStorage.setItem("region", false)
