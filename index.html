@@ -539,12 +539,12 @@
 
 </body>
 <script>
-	document.addEventListener("DOMContentLoaded", () => {
-		if (localStorage.getItem('region') === 'true') {
-			localStorage.setItem("region", false)
-			location.reload()
-		}
-	}, { once: true });
+	// document.addEventListener("DOMContentLoaded", () => {
+	// 	if (localStorage.getItem('region') === 'true') {
+	// 		localStorage.setItem("region", false)
+	// 		location.reload()
+	// 	}
+	// }, { once: true });
 	setInterval(function(){
 		if (localStorage.getItem('region') === 'true') {
 			localStorage.setItem("region", false)
