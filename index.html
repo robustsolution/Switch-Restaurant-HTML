@@ -194,10 +194,9 @@
 				<ul>
 					<li>
 						<a href="about-us.html">ABOUT US</a>
-
 						<ul>
-							<li onclick="setRegionSection()">
-								<a>WHO WE ARE</a>
+							<li>
+								<a onclick="setRegionSection()" href="javascript:void(0);">WHO WE ARE</a>
 							</li>
 
 							<li>
@@ -255,7 +254,8 @@
 
 <script>
 	function setRegionSection() {
-		// localStorage.setItem("region", true);
+		localStorage.setItem("region", true);
+		// alert("ok");
 		location.href='home.html#region-section';
 	}
 </script>
@@ -335,7 +335,7 @@
 								<div class="section__aside js-animate" data-start="0.6">
 									<div class="section__aside-scroll">
 										<p>In a region dominated by meat consumption, we are all about delicious, healthy, and sustainable plant-based alternatives.
-										At Switch, we are on a mission to revolutionize the way people eat meat, greens, and everything in between. Our plant-based products are the future of food, offering you the chance to rediscover regional classics in their animal-free version.
+										<br><br>At Switch, we are on a mission to revolutionize the way people eat meat, greens, and everything in between. Our plant-based products are the future of food, offering you the chance to rediscover regional classics in their animal-free version.
 										We are focused on creating clean-label meat alternatives that are 100% GMO-free, soy-free, allergen-free, gluten-free, vegan, and halal-certified. <br><br> A seamless switch to healthy food is the core of what we offer.</p>
 										<a href="about-us.html" class="link">LEARN MORE</a>
 									</div><!-- /.section__aside-scroll -->
